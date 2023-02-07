@@ -12,6 +12,7 @@ section{
     background-color: rgb(10, 0, 102);
     box-shadow: 0 0 0.5em rgb(0, 0, 43);
     padding: 20px;
+    box-sizing: border-box;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -40,7 +41,7 @@ input[type='checkbox']{
 }
 div#res{
     background-color: #ccc;
-    width: 280px;
+    width: 270px;
     margin: 15px auto 0;
     display:flex;
     justify-content: space-between;
@@ -60,5 +61,5 @@ button{
 }
 input#password{
     background-color: transparent;
-    width: 220px;
+    width: 210px;
 }
