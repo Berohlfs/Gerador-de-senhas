@@ -21,11 +21,11 @@ h1{
     margin: 0 auto 20px;
     color:rgb(226, 114, 9);
 }
-p{
-    color:lightblue;
+label.tamanho{
+    cursor: default;
     font-weight: bolder;
     font-size: 13px;
-    margin-bottom: 3px;
+    margin: 3px;
 }
 label{
     margin: 15px auto 0;
@@ -59,7 +59,7 @@ button{
     border-radius: 3px;
     background-color: rgb(226, 114, 9);
 }
-input#password{
+input[type="text"]{
     background-color: transparent;
     width: 210px;
 }

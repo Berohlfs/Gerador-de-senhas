@@ -8,15 +8,16 @@ const SPECIAL_CHARS = '!@#$%&*/-+='
 const INPUTS = document.querySelectorAll('input')
 const LABELS = document.querySelectorAll('label')
 const BUTTON = document.querySelector('button')
-const SIZE_TEXT = document.querySelector('p')
-let res = document.querySelector('input#password')
 
 //EventListeners
 BUTTON.addEventListener('click', generatePassword)
-for(let i=0; i<LABELS.length; i++){
-    LABELS[i].addEventListener('click', ()=>{LABELS[i].classList.toggle('yellow')})
+for(let i=0; i<INPUTS.length; i++){
+    if(i!=0){
+        INPUTS[i].addEventListener('change', ()=>{LABELS[i].classList.toggle('yellow')})
+    }else{
+        INPUTS[i].addEventListener('change', (e)=>{LABELS[i].innerText = `Tamanho: ${e.target.value} letra(s)`})
+    }
 }
-INPUTS[0].addEventListener('change', (e)=>{SIZE_TEXT.innerText = `Tamanho: ${e.target.value} letra(s)`})
 
 //Funções
 function generatePassword(){
@@ -27,7 +28,7 @@ function generatePassword(){
         let chosen_char = Math.round(Math.random() * chars_length)
         password += chars[chosen_char]
     }
-    res.value = `${password}`
+    INPUTS[4].value = `${password}`
 }
 
 function getPossibleChars(){
