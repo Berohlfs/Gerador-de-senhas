@@ -7,11 +7,11 @@ body{
     background-color: rgb(0, 0, 58);
 }
 section{
-    width: 330px;
+    width: 320px;
     margin: 50px auto;
     background-color: rgb(10, 0, 102);
     box-shadow: 0 0 0.5em rgb(0, 0, 43);
-    padding: 20px;
+    padding: 15px;
     box-sizing: border-box;
     border-radius: 10px;
     display: flex;
