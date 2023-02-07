@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+}
+body{
+    background-color: rgb(0, 0, 58);
+}
+section{
+    width: 330px;
+    margin: 50px auto;
+    background-color: rgb(10, 0, 102);
+    box-shadow: 0 0 0.5em rgb(0, 0, 43);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    margin: 0 auto 20px;
+    color:rgb(226, 114, 9);
+}
+p{
+    color:lightblue;
+    font-weight: bolder;
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+label{
+    margin: 15px auto 0;
+    color:lightblue;
+    cursor: pointer;
+}
+.yellow{
+    color:rgb(230, 179, 39);
+    font-weight: bold;
+}
+input[type='checkbox']{
+    display:none;
+}
+div#res{
+    background-color: #ccc;
+    width: 280px;
+    margin: 15px auto 0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 4px 4px 8px;
+    border-radius: 3px;
+}
+button,input{
+    border:none;
+    outline:none;
+}
+button{
+    cursor: pointer;
+    padding: 4px 7px;
+    border-radius: 3px;
+    background-color: rgb(226, 114, 9);
+}
+input#password{
+    background-color: transparent;
+    width: 220px;
+}

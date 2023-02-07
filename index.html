@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gerador de senha</title>
+</head>
+<body>
+    <section>
+        <h1>Gerador de senhas</h1>
+
+        <p>Tamanho: 12 letra(s)</p>
+        <input type="range" name="size" id="" min="0" max="24" value='12'>
+
+        <label for="caps">Adicionar maiúsculas</label>
+        <input type="checkbox" name="" id="caps">
+
+        <label for="special">Adicionar caractéres especiais</label>
+        <input type="checkbox" name="" id="special">
+
+        <label for="numeros">Adicionar números</label>
+        <input type="checkbox" name="" id="numeros">
+
+        <div id="res">
+            <input type="text" id="password" placeholder="Senha">
+            <button>Gerar</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
