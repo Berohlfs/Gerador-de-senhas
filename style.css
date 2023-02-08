@@ -1,65 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
 *{
     padding: 0;
     margin: 0;
-    font-family: Arial;
+    font-family: 'Quicksand', sans-serif;
 }
 body{
-    background-color: rgb(0, 0, 58);
-}
-section{
-    width: 320px;
-    margin: 50px auto;
-    background-color: rgb(10, 0, 102);
-    box-shadow: 0 0 0.5em rgb(0, 0, 43);
-    padding: 15px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
+    background-color: #f8f8f8;
 }
 h1{
-    margin: 0 auto 20px;
-    color:rgb(226, 114, 9);
+    margin: 20px auto;
+    text-align: center;
+    font-size: 22px;
 }
-label.tamanho{
-    cursor: default;
-    font-weight: bolder;
-    font-size: 13px;
-    margin: 3px;
+p{
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 20px;
 }
-label{
-    margin: 15px auto 0;
-    color:lightblue;
-    cursor: pointer;
+div#app-wrapper{
+    width:330px;
+    box-sizing: border-box;
+    margin: 0 auto;
 }
-.yellow{
-    color:rgb(230, 179, 39);
-    font-weight: bold;
-}
-input[type='checkbox']{
-    display:none;
-}
-div#res{
-    background-color: #ccc;
-    width: 270px;
-    margin: 15px auto 0;
-    display:flex;
-    justify-content: space-between;
+div.input-div{
+    background-color: #fff;
+    padding: 8px 10px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    display: flex;
     align-items: center;
-    padding: 4px 4px 4px 8px;
-    border-radius: 3px;
+    justify-content: space-evenly;
 }
-button,input{
-    border:none;
-    outline:none;
-}
-button{
-    cursor: pointer;
-    padding: 4px 7px;
-    border-radius: 3px;
-    background-color: rgb(226, 114, 9);
+div#security{
+    height: 4px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: 0.3s;
+    width: 0%;
 }
 input[type="text"]{
     background-color: transparent;
-    width: 210px;
+    border: none;
+    outline:none;
+    width:81%;
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+}
+p#security-state{
+    font-size: 17px;
+}
+div#settings-wrapper{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 15px 0px;
+}
+input[type="range"]{
+    width:200px;
+}
+button{
+    border: none;
+    outline:none;
+    background-color: blueviolet;
+    color:white;
+    padding: 5px;
+    border-radius: 2px;
+    display:block;
+    margin: 0 auto;
+}
+img{
+    width: 20px;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 50%;
+    padding: 5px;
+}
+img:hover{
+    background-color: #ddd;
 }
